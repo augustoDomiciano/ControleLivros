@@ -7,7 +7,8 @@
     </head>
     <body>
         <h1 style="text-align: center;">Relação Livros</h1>
-        <form method="POST" action="/livro/add">
+        <form method="POST" action="/livro/upd">
+        <input type="hidden" id="id" name="id" value="{{livro.id}}">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -15,7 +16,7 @@
                         <tbody>
                             <tr>
                                 <td>Nome: </td>
-                                <td><input type="text" name="nome" id="nome" required></td>
+                                <td><input type="text" name="nome" id="nome" value="{{livro.nome}}" required></td>
                             </tr>
                             <tr>
                                 <td>Genero: </td>
@@ -23,14 +24,14 @@
                             </tr>
                             <tr>
                                 <td>Data Entrada: </td>
-                                <td><input type="date" name="entrada" id="entrada" required format="dd/mm/yyyy" placeholder="DD-MM-YYYY"></td>
+                                <td><input type="date" name="entrada" id="entrada" required format="dd/mm/yyyy" placeholder="DD-MM-YYYY" value="{{livro.entrada}}"></td>
                             </tr>
                             <tr>
                                 <td>Data Saida: </td>
-                                <td><input type="date" name="saida" id="saida" required format="dd/mm/yyyy" placeholder="DD-MM-YYYY"></td>
+                                <td><input type="date" name="saida" id="saida" required format="dd/mm/yyyy" placeholder="DD-MM-YYYY" value="{{livro.saida}}"></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><input type="submit" value="Inserir"></td>
+                                <td colspan="2"><input type="submit" value="Alterar"></td>
                             </tr>                            
                         </tbody>
                     </table>

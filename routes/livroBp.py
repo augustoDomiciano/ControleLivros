@@ -50,9 +50,9 @@ def upd_livro():
 
     livro = Livro.query.filter_by(id = iLivro).first()
     livro.nome = sNome
-    livro.tipo = sGenero
-    livro.inicio = dEntrada
-    livro.fim = dSaida
+    livro.genero = sGenero
+    livro.entrada = dEntrada
+    livro.saida = dSaida
     db.session.add(livro)
     db.session.commit()
 
