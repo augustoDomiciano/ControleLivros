@@ -1,2 +1,2 @@
 # ControleLivros
-Esse aplicação foi desenvolvida nas aulas de extensão de Python avançado com Flask. Tem o objetivo de fazer o controle do estoque de livros.
+Essa aplicação é parte de uma atividade avaliativa da extensão de Python Avançado com Flask. Sua funcionalidade é manter o controle dos livros lidos durante o ano, com a sua data de inicio e fim, quantidade de paginas, genero e nota.
