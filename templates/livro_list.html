@@ -7,15 +7,15 @@
     </head>
     <body>
         <h1 style="text-align: center;">Relação livros</h1>
-        <div class="container">
+        <div class="container p-3 my-3 border">
             <div class="row">
                 <div class="col-xs-12">
                     <table class="table">
                         <thead>
                             <th>Nome</th>
-                            <th>Genero</th>
+                            <th>Gênero</th>
                             <th>Entrada</th>
-                            <th>Saida</th>
+                            <th>Saída</th>
                             <th></th>
                         </thead>
                         <tbody>
@@ -25,13 +25,13 @@
                                 <td>{{livro.genero}}</td>
                                 <td>{{livro.entrada}}</td>
                                 <td>{{livro.saida}}</td>
-                                <td><a href="/livro/update/{{livro.id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Alterar</a>
-                                    <a href="/livro/delete/{{livro.id}}" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Apagar</a></td>
+                                <td><a href="/livro/update/{{livro.id}}" class="btn btn-outline-warning btn-lg" role="button" aria-pressed="true">Alterar</a>
+                                    <a href="/livro/delete/{{livro.id}}" class="btn btn-outline-danger btn-lg" role="button" aria-pressed="true">Apagar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                    <a href="/livro/create" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Novo</a>
+                    <a href="/livro/create" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">Novo</a>
                 </div>
             </div>
         </div>
